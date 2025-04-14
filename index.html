@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>incluiTEA - Inclusão no Trabalho</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #5c6bc0;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover { text-decoration: underline; }
+    .banner {
+      background-color: #c5cae9;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .banner h1 { margin-bottom: 1rem; }
+    .banner a {
+      background-color: #3f51b5;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    section { padding: 2rem; }
+    section h2 { color: #3f51b5; }
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: scale(1.02); }
+    footer {
+      background-color: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background-color: #303f9f; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>incluiTEA</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="banner" id="inicio">
+    <h1>Promovendo a inclusão de pessoas com autismo no mercado de trabalho</h1>
+    <p><a href="#sobre">Saiba Mais</a></p>
+  </div>
+
+  <section id="sobre">
+    <h2>Nosso Propósito</h2>
+    <p>O projeto <strong>incluiTEA</strong> busca promover a inclusão e a empregabilidade de pessoas com autismo no mercado de trabalho, oferecendo oportunidades justas e adaptadas às suas necessidades...</p>
+  </section>
+
+  <section id="objetivos">
+    <h2>Nossos Compromissos</h2>
+    <ul>
+      <li>Valorizar as potencialidades de pessoas autistas no ambiente de trabalho.</li>
+      <li>Contribuir para a promoção da inclusão, diversidade e produtividade nas organizações.</li>
+      <li>Incentivar a criação de políticas organizacionais inclusivas.</li>
+      <li>Fomentar uma rede de apoio entre autistas, familiares e profissionais.</li>
+      <li>Utilizar tecnologia para facilitar a adaptação e o treinamento de pessoas autistas.</li>
+      <li>Garantir mais acessibilidade e oportunidades no mercado de trabalho.</li>
+    </ul>
+  </section>
+
+  <section id="recursos">
+    <h2>Tecnologia a favor da inclusão</h2>
+    <div class="cards">
+      <div class="card"><h3>Cursos e Treinamentos</h3><p>Capacitações para autistas e orientações para empresas.</p></div>
+      <div class="card"><h3>Dicas para empresas inclusivas</h3><p>Boas práticas e estratégias de inclusão no ambiente corporativo.</p></div>
+      <div class="card"><h3>Ferramentas de acessibilidade</h3><p>Recursos digitais e físicos que apoiam o dia a dia no trabalho.</p></div>
+      <div class="card"><h3>Rede de apoio</h3><p>Conexão entre autistas, famílias e profissionais especializados.</p></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em contato</h2>
+    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Redes sociais | Créditos do TCC</p>
+    <p>ETEC Maria Cristina Medeiros - incluiTEA</p>
+  </footer>
+</body>
+</html>
