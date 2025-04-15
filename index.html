@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>incluiTEA - Inclusão no Trabalho</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     * { box-sizing: border-box; }
     body {
@@ -92,39 +92,27 @@
       background-color: #f0f0f0;
       padding: 2rem;
       text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .curiosidades h2 {
       color: #3f51b5;
       margin-bottom: 1rem;
-      font-size: 1.5rem;
     }
     .curiosidades ul {
       list-style-type: none;
       padding: 0;
     }
     .curiosidades ul li {
-      margin: 1rem 0;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
     }
-    .curiosidades ul li i {
-      margin-right: 1rem;
-      font-size: 1.5rem;
+    .curiosidades i {
+      margin-right: 0.5rem;
       color: #3f51b5;
     }
     .curiosidades img {
       max-width: 100%;
       height: auto;
       margin-top: 1.5rem;
-    }
-    .contato {
-      background-color: #3f51b5;
-      color: white;
-      padding: 2rem;
-      text-align: center;
     }
   </style>
 </head>
@@ -165,27 +153,20 @@
   <section class="curiosidades" id="curiosidades">
     <h2>Curiosidades sobre o TEA no Mercado de Trabalho</h2>
     <ul>
-      <li><i class="fas fa-search"></i> Pessoas com autismo podem ser altamente detalhistas e excelentes em tarefas que exigem foco e precisão.</li>
-      <li><i class="fas fa-building"></i> Empresas como SAP, Microsoft e Google têm programas específicos para integrar pessoas com autismo no mercado de trabalho.</li>
-      <li><i class="fas fa-adjust"></i> A adaptação do ambiente de trabalho, com a redução de estímulos sensoriais, pode aumentar a produtividade e o bem-estar de pessoas com TEA.</li>
-      <li><i class="fas fa-lightbulb"></i> Estudos mostram que a diversidade neurodiversa no local de trabalho pode aumentar a resolução criativa de problemas e trazer soluções inovadoras.</li>
+      <li><i class="fas fa-search"></i>Pessoas com autismo podem ser altamente detalhistas e excelentes em tarefas que exigem foco e precisão.</li>
+      <li><i class="fas fa-building"></i>Empresas como SAP, Microsoft e Google têm programas específicos para integrar pessoas com autismo no mercado de trabalho.</li>
+      <li><i class="fas fa-adjust"></i>A adaptação do ambiente de trabalho, com a redução de estímulos sensoriais, pode aumentar a produtividade e o bem-estar de pessoas com TEA.</li>
+      <li><i class="fas fa-lightbulb"></i>Estudos mostram que a diversidade neurodiversa no local de trabalho pode aumentar a resolução criativa de problemas e trazer soluções inovadoras.</li>
     </ul>
-    <img src="https://soaresmarc00.github.io/IncluiTEA/images/inclusion_workspace.png" alt="Inclusão no local de trabalho">
+    <img src="https://cdn.pixabay.com/photo/2021/04/29/09/33/diversity-6218326_1280.png" alt="Inclusão no local de trabalho">
   </section>
 
-  <section id="contato" class="contato">
-    <h2>Entre em Contato</h2>
-    <p>Se você tem dúvidas ou quer saber mais, entre em contato conosco através do formulário abaixo:</p>
-    <form action="mailto:contato@incluitea.com" method="post" enctype="text/plain">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
+  <section id="contato">
+    <h2>Entre em Contato Conosco</h2>
+    <form action="mailto:incluitea.contato@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
