@@ -91,23 +91,39 @@
       background-color: #f0f0f0;
       padding: 2rem;
       text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .curiosidades h2 {
       color: #3f51b5;
       margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
     .curiosidades ul {
       list-style-type: none;
       padding: 0;
     }
     .curiosidades ul li {
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+    .curiosidades ul li img {
+      margin-right: 1rem;
+      width: 40px;
+      height: 40px;
     }
     .curiosidades img {
       max-width: 100%;
       height: auto;
       margin-top: 1.5rem;
+    }
+    .contato {
+      background-color: #3f51b5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
   </style>
 </head>
@@ -148,12 +164,18 @@
   <section class="curiosidades" id="curiosidades">
     <h2>Curiosidades sobre o TEA no Mercado de Trabalho</h2>
     <ul>
-      <li>Pessoas com autismo podem ser altamente detalhistas e excelentes em tarefas que exigem foco e precisão.</li>
-      <li>Empresas como SAP, Microsoft e Google têm programas específicos para integrar pessoas com autismo no mercado de trabalho.</li>
-      <li>A adaptação do ambiente de trabalho, com a redução de estímulos sensoriais, pode aumentar a produtividade e o bem-estar de pessoas com TEA.</li>
-      <li>Estudos mostram que a diversidade neurodiversa no local de trabalho pode aumentar a resolução criativa de problemas e trazer soluções inovadoras.</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/clipboard.png" alt="Detalhista"> Pessoas com autismo podem ser altamente detalhistas e excelentes em tarefas que exigem foco e precisão.</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/people.png" alt="Empresas"> Empresas como SAP, Microsoft e Google têm programas específicos para integrar pessoas com autismo no mercado de trabalho.</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/workspace.png" alt="Ambiente"> A adaptação do ambiente de trabalho, com a redução de estímulos sensoriais, pode aumentar a produtividade e o bem-estar de pessoas com TEA.</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/light-bulb.png" alt="Criatividade"> Estudos mostram que a diversidade neurodiversa no local de trabalho pode aumentar a resolução criativa de problemas e trazer soluções inovadoras.</li>
     </ul>
     <img src="https://soaresmarc00.github.io/IncluiTEA/images/inclusion_workspace.png" alt="Inclusão no local de trabalho">
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Se você tem dúvidas ou quer saber mais, entre em contato conosco por e-mail!</p>
+    <p><a href="mailto:contato@incluitea.com" style="color: white; font-weight: bold;">contato@incluitea.com</a></p>
   </section>
 
   <footer>
