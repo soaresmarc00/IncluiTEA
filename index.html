@@ -87,6 +87,28 @@
       cursor: pointer;
     }
     button:hover { background-color: #303f9f; }
+    .curiosidades {
+      background-color: #f0f0f0;
+      padding: 2rem;
+      text-align: center;
+    }
+    .curiosidades h2 {
+      color: #3f51b5;
+      margin-bottom: 1rem;
+    }
+    .curiosidades ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .curiosidades ul li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .curiosidades img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -96,21 +118,21 @@
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#objetivos">Objetivos</a>
-      <a href="#recursos">Recursos</a>
+      <a href="#curiosidades">Curiosidades</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
-
+ 
   <div class="banner" id="inicio">
     <h1>Promovendo a inclusão de pessoas com autismo no mercado de trabalho</h1>
     <p><a href="#sobre">Saiba Mais</a></p>
   </div>
-
+ 
   <section id="sobre">
     <h2>Nosso Propósito</h2>
     <p>O projeto <strong>incluiTEA</strong> busca promover a inclusão e a empregabilidade de pessoas com autismo no mercado de trabalho, oferecendo oportunidades justas e adaptadas às suas necessidades...</p>
   </section>
-
+ 
   <section id="objetivos">
     <h2>Nossos Compromissos</h2>
     <ul>
@@ -122,28 +144,20 @@
       <li>Garantir mais acessibilidade e oportunidades no mercado de trabalho.</li>
     </ul>
   </section>
-
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <form action="https://formspree.io/f/mdkejzla" method="POST">
-      <input type="hidden" name="_replyto" value="incluitea@gmail.com">
-      
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
+  
+  <section class="curiosidades" id="curiosidades">
+    <h2>Curiosidades sobre o TEA no Mercado de Trabalho</h2>
+    <ul>
+      <li>Pessoas com autismo podem ser altamente detalhistas e excelentes em tarefas que exigem foco e precisão.</li>
+      <li>Empresas como SAP, Microsoft e Google têm programas específicos para integrar pessoas com autismo no mercado de trabalho.</li>
+      <li>A adaptação do ambiente de trabalho, com a redução de estímulos sensoriais, pode aumentar a produtividade e o bem-estar de pessoas com TEA.</li>
+      <li>Estudos mostram que a diversidade neurodiversa no local de trabalho pode aumentar a resolução criativa de problemas e trazer soluções inovadoras.</li>
+    </ul>
+    <img src="https://soaresmarc00.github.io/IncluiTEA/images/inclusion_workspace.png" alt="Inclusão no local de trabalho">
   </section>
 
   <footer>
-    <p>&copy; 2025 incluiTEA. Todos os direitos reservados.</p>
-    <p>Desenvolvido por: Leonardo Moreira, Marcella Soares, Maria Clara Bianchi, Maria Fernanda Oliveira, Octavio Lopes</p>
+    <p>Feito por: Marcella Soares, Leonardo Moreira, Maria Fernanda Oliveira, Maria Clara Bianchi, Octavio Lopes</p>
   </footer>
 </body>
 </html>
