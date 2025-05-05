@@ -1,96 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IncluiTEA</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #005f73;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      background-color: #0a9396;
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #005f73;
-      border-bottom: 2px solid #94d2bd;
-      padding-bottom: 10px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    footer {
-      background-color: #005f73;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-    .contact-form {
-      background-color: #e0fbfc;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .contact-form label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form button {
-      background-color: #0a9396;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background-color: #007f7f;
-    }
+    :root {
+      --cor-primaria: #1e3a8a;
+      --cor-secundaria: #3b82f6;
+      --cor-destaque: #e0f2fe;
+      --cor-fundo: #f9fafb;
+      --cor-texto: #1f2937;
+    }body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header {
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+nav {
+  background-color: var(--cor-destaque);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: var(--cor-primaria);
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  border-left: 6px solid var(--cor-secundaria);
+  padding-left: 12px;
+  margin-bottom: 16px;
+  color: var(--cor-primaria);
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.contact-form {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #2563eb;
+}
+
   </style>
 </head>
 <body>
-
   <header>
     <h1>IncluiTEA</h1>
     <p>Inclusão de Pessoas com Autismo no Ambiente de Trabalho</p>
-  </header>
-
-  <nav>
+  </header>  <nav>
     <a href="#sobre">Sobre</a>
     <a href="#missao">Missão</a>
     <a href="#visao">Visão</a>
@@ -98,84 +119,63 @@
     <a href="#objetivos">Objetivos</a>
     <a href="#como-incluir">Como Incluir</a>
     <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
+  </nav>  <section id="sobre">
     <h2>Sobre</h2>
     <p>O <strong>IncluiTEA</strong> é um projeto que nasceu com o propósito de <strong>romper barreiras e combater preconceitos</strong> que ainda impedem a inclusão de pessoas com Transtorno do Espectro Autista (TEA) no mercado de trabalho. Infelizmente, muitos profissionais autistas são vistos como incapazes, não por falta de habilidades, mas pela falta de compreensão e preparo das empresas.</p>
-    <p>Nosso objetivo é mostrar que <strong>a inclusão é possível, necessária e extremamente benéfica para todos</strong>. Por meio de informação acessível e ações práticas, incentivamos as empresas a se tornarem ambientes mais acolhedores e estruturados, capazes de valorizar o potencial dos profissionais autistas e oferecer oportunidades justas e adaptadas às suas necessidades.</p>
-  </section>
-
-  <section id="missao">
+    <p>Nosso objetivo é mostrar que <strong>a inclusão é possível, necessária e extremamente benéfica para todos</strong>. Por meio de informação acessível e ações práticas, incentivamos as empresas a se tornarem ambientes mais acolhedores e estruturados, capazes de valorizar o potencial dos profissionais autistas.</p>
+  </section>  <section id="missao">
     <h2>Missão</h2>
     <p>Promover a inclusão e a empregabilidade de pessoas com autismo no ambiente profissional, construindo um mercado de trabalho mais justo, acessível e diverso.</p>
-  </section>
-
-  <section id="visao">
+  </section>  <section id="visao">
     <h2>Visão</h2>
     <p>Ser uma referência na luta por inclusão no trabalho, conectando empresas, profissionais autistas, familiares e especialistas para transformar a realidade do mercado.</p>
-  </section>
-
-  <section id="valores">
+  </section>  <section id="valores">
     <h2>Valores</h2>
     <ul>
       <li><strong>Respeito às diferenças:</strong> Cada pessoa é única e merece ser tratada com dignidade, empatia e compreensão.</li>
       <li><strong>Diversidade e inclusão:</strong> Acreditamos que ambientes diversos são mais ricos, criativos e inovadores.</li>
       <li><strong>Acessibilidade e equidade:</strong> Lutar por oportunidades adaptadas é garantir que todos possam ter chances reais.</li>
-      <li><strong>Conscientização contínua:</strong> Informar é o primeiro passo para transformar. Educação e diálogo abrem portas.</li>
+      <li><strong>Conscientização contínua:</strong> Educação e diálogo abrem portas.</li>
     </ul>
-  </section>
-
-  <section id="objetivos">
+  </section>  <section id="objetivos">
     <h2>Objetivos do Projeto</h2>
     <h3>Objetivo Geral:</h3>
-    <p>Promover a inclusão e a empregabilidade de pessoas com autismo no mercado de trabalho, oferecendo oportunidades justas e adaptadas às suas necessidades. Além disso, conscientizar empresas sobre a importância da inclusão e das boas práticas, ampliando o universo social e cultural do autista e de sua família.</p>
-    
+    <p>Promover a inclusão e a empregabilidade de pessoas com autismo no mercado de trabalho, oferecendo oportunidades justas e adaptadas às suas necessidades.</p>
     <h3>Objetivos Específicos:</h3>
     <ul>
-      <li>Valorizar as potencialidades de pessoas autistas no ambiente de trabalho;</li>
+      <li>Valorizar as potencialidades de pessoas autistas;</li>
       <li>Incentivar políticas organizacionais inclusivas;</li>
       <li>Contribuir para a diversidade e produtividade nas empresas;</li>
       <li>Fomentar redes de apoio entre autistas, familiares e profissionais;</li>
-      <li>Utilizar tecnologia para melhorar o processo de adaptação, capacitação e acessibilidade;</li>
-      <li>Combater o preconceito e promover a empatia dentro das organizações.</li>
+      <li>Utilizar tecnologia para melhorar a adaptação e acessibilidade;</li>
+      <li>Combater o preconceito e promover empatia nas organizações.</li>
     </ul>
-  </section>
-
-  <section id="como-incluir">
+  </section>  <section id="como-incluir">
     <h2>Como Incluir?</h2>
-    <p>A inclusão começa com pequenos passos:</p>
     <ul>
       <li>Capacite sua equipe com treinamentos sobre neurodiversidade;</li>
       <li>Adapte ambientes físicos e digitais;</li>
       <li>Ofereça rotinas claras e comunicação objetiva;</li>
-      <li>Estimule o respeito e a empatia no ambiente de trabalho;</li>
+      <li>Estimule o respeito e empatia no ambiente de trabalho;</li>
       <li>Crie canais de escuta e apoio para colaboradores neurodivergentes.</li>
     </ul>
-    <p><strong>O importante é agir com consciência e intenção, construindo um ambiente onde todos possam prosperar.</strong></p>
-  </section>
-
-  <section id="contato">
+  </section>  <section id="contato">
     <h2>Contato</h2>
     <div class="contact-form">
       <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required><label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
+  </section>  <footer>
     <p>&copy; 2025 IncluiTEA. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
